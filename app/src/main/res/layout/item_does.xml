@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bgitemdoes"
+    android:layout_height="100dp"
+    android:layout_marginBottom="20dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="220dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp" >
+
+        <TextView
+            android:id="@+id/titledoes"
+            android:layout_marginTop="19dp"
+            android:textSize="22sp"
+            android:textColor="#000c5d"
+            android:layout_width="wrap_content"
+            android:text="Buy things"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/descdoes"
+            android:layout_marginTop="19dp"
+            android:textSize="18sp"
+            android:textColor="#555555"
+            android:layout_width="wrap_content"
+            android:text="LOOOL"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp">
+        
+        <TextView
+            android:id="@+id/datedoes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#84a9ac"
+            android:layout_marginTop="9dp"
+            android:textSize="18sp"
+            android:text="Bukas ng tommorrow"/>
+        
+    </LinearLayout>
+    
+</LinearLayout>

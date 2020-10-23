@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e4e3e3"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="198dp"
+        android:background="@color/colorPrimary">
+        
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginLeft="16dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/titlepage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ToDo"
+                    android:textSize="32sp"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/subtitlepage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#fff"
+                    android:layout_marginTop="8dp"
+                    android:text="Add new To do"/>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:textSize="30sp"
+                android:text="+"
+                android:textColor="#fff"
+                android:id="@+id/btnAddNew"
+                android:background="@drawable/bgbtnadd"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="80dp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e4e3e3"/>
+
+    </LinearLayout>
+    
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ourdoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-60dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No more To Do"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:id="@+id/endpage"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
